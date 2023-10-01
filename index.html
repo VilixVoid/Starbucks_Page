@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Starbucks Website Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Img\logo.png">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="Img\logo.png"></a>
+            <ul id="menuList">
+                <li><a href="https://www.starbucks.co.id/">Home</a></li>
+                <li><a href="https://www.starbucks.co.id/menu">Menu</Menu></a></li>
+                <li><a href="https://www.starbucks.com/menu/featured/">What's New</a></li>
+                <li><a href="https://www.starbucks.co.id/customer-service">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffe<br>It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adpisicing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venaim,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                    <a href="https://www.starbucks.com/about-us/" onclick='return check()''>Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="Img\img1.png" class="starbucks">
+            </div>
+            <ul class="thumb">
+                <li><img src="Img\thumb1.png" onclick="imgSlider('Img\img1.png'); changeCircleColor('#017143')"></li>
+                <li><img src="Img\thumb2.png" onclick="imgSlider('Img\img2.png'); changeCircleColor('#eb7495')"></li>
+                <li><img src="Img\thumb3.png" onclick="imgSlider('Img\img3.png'); changeCircleColor('#d752b1')"></li>
+            </ul>
+            <ul class="sci">
+                <li><a href="https://www.facebook.com/Starbucks"><img src="Img\facebook.png"></a></li>
+                <li><a href="https://www.instagram.com/starbucks/?hl=id"><img src="Img\instagram.png"></a></li>
+                <li><a href="https://twitter.com/Starbucks"><img src="Img\twitter.png"></a></li>
+            </ul>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src =anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+        function check(){
+            return true
+        }
+    </script>
+</body>
+</html>
